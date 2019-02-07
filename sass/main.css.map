@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "AAEA;;;;;;;;;;EAUE",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "_variables.scss"
     ],
     "names": [],
     "file": "main.css"
