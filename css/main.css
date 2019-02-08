@@ -1,12 +1,22 @@
-.btn {
-  padding: 1em 1.5em;
-  border-radius: 1em;
-  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+.btn-form, .btn {
+  border-radius: 40px;
+  background-image: linear-gradient(135deg, #65e2d9, #339ecc);
   text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 .btn {
-  width: 5em;
+  padding: 18px 88px 18px 88px;
+}
+
+.btn-form {
+  font-size: 14px;
+  padding: 15px 35px 15px 35px;
+  border: none;
+  outline: 0;
 }
 
 /*
