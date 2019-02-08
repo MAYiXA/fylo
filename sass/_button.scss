@@ -1,0 +1,11 @@
+%btn {
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, $color-grad-cyan, $color-grad-blue);
+    text-decoration: none;
+}
+
+.btn {
+    @extend %btn;
+    width: 5em;
+}

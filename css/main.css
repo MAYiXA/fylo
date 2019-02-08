@@ -1,0 +1,24 @@
+.btn {
+  padding: 1em 1.5em;
+  border-radius: 1em;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  text-decoration: none;
+}
+
+.btn {
+  width: 5em;
+}
+
+/*
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*/
+
+/*# sourceMappingURL=main.css.map */
