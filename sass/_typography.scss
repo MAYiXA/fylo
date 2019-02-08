@@ -1,0 +1,15 @@
+body {
+    color: $color-text;
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: $size-body;
+}
+
+h1, h2 {
+    font-family: $font-headings;
+    font-weight: 700;
+}
+
+.heading-big {
+    font-size: $size-big;
+}

@@ -1,12 +1,15 @@
 // media query
 $breakpoint: "only screen and (min-width : 425px)";
 
-// font styling
+// font
 $font-body: 'Open Sans', sans-serif;
 $font-headings: 'Raleway', sans-serif;
-$size-body: 14px;
+// font weight
 $normal: 400;
 $bold: 700;
+// font-size
+$size-body: 14px;
+$size-big: 40px;
 
 // colors
 $color-text: hsl(0, 0%, 100%);
