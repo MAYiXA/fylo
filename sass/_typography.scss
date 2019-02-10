@@ -2,7 +2,6 @@ body {
     color: $color-text;
     font-family: $font-body;
     font-weight: 400;
-    font-size: $size-body;
 }
 
 h1, h2 {
@@ -11,5 +10,5 @@ h1, h2 {
 }
 
 .heading-big {
-    font-size: $size-big;
+    font-size: pxtoem(36);
 }

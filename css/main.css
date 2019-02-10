@@ -1,16 +1,20 @@
-p, h1, h2 {
-  color: white;
+body {
+  background-color: #1c2431;
 }
 
-p {
+body {
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
 }
 
 h1, h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+}
+
+.heading-big {
+  font-size: 2.25em;
 }
 
 .btn-form, .btn {
@@ -39,7 +43,6 @@ h1, h2 {
 }
 @media only screen and (min-width : 425px) {
   .btn-form {
-    font-size: 14px;
     padding: 15px 35px 15px 35px;
   }
 }

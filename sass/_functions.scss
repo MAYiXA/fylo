@@ -1,0 +1,6 @@
+/// Font size in em.
+/// @param {Number} $target-px - The font-size in pixels you want
+/// @param {Number} $context [$root-font-size] - The font-size of the context you are in
+@function pxtoem($target-px, $context: 16) {
+    @return $target-px / $context * 1em;
+  }
