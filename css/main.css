@@ -54,11 +54,6 @@ body {
   padding-top: 4.5em;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -67,10 +62,14 @@ a {
   display: inline-block;
 }
 .nav-container ul li a {
-  padding: 1.5em;
+  text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: #d9d9d9;
 }
+.nav-container ul li a:hover {
+  padding: 0.5em 1.5em;
+}
+
 /*
 .attribution {
     font-size: 11px;
