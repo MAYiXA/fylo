@@ -1,3 +1,25 @@
 body {
     background-color: $color-bg-intro;
 }
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 4.5em;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    ul li {
+        display: inline-block;
+        a {
+        text-decoration: none;
+        font-family: $font-headings;
+        color: $color-nav;
+        }
+        a:hover {
+            @extend %button;
+        }
+    }
+}
