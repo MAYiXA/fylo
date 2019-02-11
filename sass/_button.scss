@@ -4,7 +4,6 @@
     text-decoration: none;
     color: $color-text;
     font-family: $font-headings;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -12,6 +11,7 @@
     @extend %button;
     outline: 0;
     padding: 18px 30% 18px 30%;
+    font-weight: $bold;
     @media #{$breakpoint} {
         padding: 18px 85px 18px 85px;
     }
@@ -22,6 +22,7 @@
     border: none;
     outline: 0;
     padding: 18px 20% 18px 20%;
+    font-weight: $bold;
     @media #{$breakpoint} {
     padding: 15px 35px 15px 35px;
     }

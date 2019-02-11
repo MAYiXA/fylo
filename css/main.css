@@ -19,13 +19,13 @@ h1, h2 {
   text-decoration: none;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   text-align: center;
 }
 
 .btn {
   outline: 0;
   padding: 18px 30% 18px 30%;
+  font-weight: 700;
 }
 @media only screen and (min-width : 426px) {
   .btn {
@@ -37,6 +37,7 @@ h1, h2 {
   border: none;
   outline: 0;
   padding: 18px 20% 18px 20%;
+  font-weight: 700;
 }
 @media only screen and (min-width : 426px) {
   .btn-form {
@@ -60,14 +61,20 @@ body {
 }
 .nav-container ul li {
   display: inline-block;
+  list-style: none;
+  padding: 0 1.5em;
 }
 .nav-container ul li a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: #d9d9d9;
+  border-radius: 40px;
+  background-color: transparent;
+  transition: 0.8s;
 }
 .nav-container ul li a:hover {
   padding: 0.5em 1.5em;
+  font-weight: 700;
 }
 
 /*
