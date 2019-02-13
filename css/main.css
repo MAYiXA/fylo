@@ -70,11 +70,47 @@ body {
   color: #d9d9d9;
   border-radius: 40px;
   background-color: transparent;
-  transition: 0.8s;
+  transition: 0.6s;
 }
 .nav-container ul li a:hover {
   padding: 0.5em 1.5em;
   font-weight: 700;
+}
+
+.intro {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+/* WORKING ON IT, ERROR 
+.intro::after {
+    content: "";
+    background-image: url("images\bg-curvy-desktop.svg");
+    position: absolute;
+    top: 0;
+    height: 449px;
+    width: 700px;
+} */
+.wrap-grid {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.wrap-grid-item {
+  width: 29.5%;
+  text-align: center;
+  padding: 1.8em;
 }
 
 /*
