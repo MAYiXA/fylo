@@ -1,15 +1,21 @@
-body {
-    color: $color-text;
+p {
+    color: $color-grey;
     font-family: $font-body;
     font-weight: 400;
 }
 
 h1, h2 {
+    color: $color-white;
     font-family: $font-headings;
     font-weight: 700;
 }
 
 .heading-big {
     font-size: pxtoem(40);
+    line-height: 1.5em;
+}
+
+.p-big {
+    font-size: pxtoem(20);
     line-height: 1.5em;
 }
