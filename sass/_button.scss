@@ -1,7 +1,6 @@
 %button {
     border-radius: 40px;
     background-image: linear-gradient(135deg, $color-grad-cyan, $color-grad-blue);
-    text-decoration: none;
     color: $color-text;
     font-family: $font-headings;
     text-align: center;
@@ -9,7 +8,6 @@
 
 .btn {
     @extend %button;
-    outline: 0;
     padding: 18px 30% 18px 30%;
     font-weight: $bold;
     @media #{$breakpoint} {
