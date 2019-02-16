@@ -2,43 +2,32 @@ body {
     background-color: $color-bg-intro;
 }
 
+a {
+    text-decoration: none;
+  
+	&:hover,
+	&:focus,
+	&:active {
+	  text-decoration: none;
+  }
+}
+
 .wrapper {
     width: 90%;
     margin: auto;
     padding-top: 4.5em;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    ul li {
-        display: inline-block;
-        list-style: none;
-        padding: 0 1.5em;
-        a {
-            text-decoration: none;
-            font-family: $font-headings;
-            color: $color-nav;
-            border-radius: 40px;
-            background-color: transparent;
-            transition: 0.6s;
-        }
-        a:hover {
-            @extend %button;
-            padding: 0.5em 1.5em;
-            font-weight: $bold;
-        }
-    }
-}
 .intro {
     margin: auto;
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     position: relative;
+    text-align: center;
 }
 /* WORKING ON IT, ERROR 
 .intro::after {
@@ -50,7 +39,7 @@ body {
     width: 700px;
 } */
 
-.wrap-grid {
+.grid {
     margin: auto;
     width: 90%;
     height: 100%;
@@ -60,7 +49,7 @@ body {
     align-content: center;
 }
 
-.wrap-grid-item {
+.grid-item {
     width: 29.5%;
     text-align: center;
     padding: 1.8em;
