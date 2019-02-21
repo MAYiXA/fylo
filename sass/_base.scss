@@ -19,26 +19,6 @@ a {
     padding-top: 4.5em;
 }
 
-.intro {
-    margin: auto;
-    width: 50%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    text-align: center;
-}
-/* WORKING ON IT, ERROR 
-.intro::after {
-    content: "";
-    background-image: url("images\bg-curvy-desktop.svg");
-    position: absolute;
-    top: 0;
-    height: 449px;
-    width: 700px;
-} */
-
 .grid {
     margin: auto;
     width: 90%;
@@ -51,6 +31,6 @@ a {
 .grid-item {
     width: 29.5%;
     text-align: center;
-    padding: 1.8em;
+    padding: 3em;
 }
 
