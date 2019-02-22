@@ -12,25 +12,22 @@ a {
   }
 }
 
-.wrapper {
-    width: 90%;
-    margin: auto;
-    padding-top: 4.5em;
+main {
+    background-color: $color-bg-main;
 }
 
 .grid {
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    margin: 4em 0;
+    padding: 0 5%;
 }
 
 .grid-item {
     text-align: center;
-    margin: 2.5em 3.2em;
+    margin: 0 3.3em 3em;
     align-self: center;
     h2 {
         margin: 0;
