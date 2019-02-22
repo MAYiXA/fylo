@@ -10,13 +10,23 @@ h1, h2 {
   font-weight: 700;
 }
 
+.nav-top ul li a {
+  font-family: "Raleway", sans-serif;
+}
+.nav-top ul li a:hover {
+  font-weight: 700;
+}
+
 .heading-big {
   font-size: 2.5em;
-  line-height: 1.5em;
 }
 
 .p-big, .grid .grid-item h2 {
   font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.p-medium {
   line-height: 1.5em;
 }
 
@@ -90,7 +100,6 @@ main {
   padding: 0 1.5em;
 }
 .nav-top ul li a {
-  font-family: "Raleway", sans-serif;
   color: #d9d9d9;
   border-radius: 40px;
   background-color: transparent;
@@ -98,7 +107,6 @@ main {
 }
 .nav-top ul li a:hover {
   padding: 0.5em 1.5em;
-  font-weight: 700;
 }
 
 .intro {
@@ -116,6 +124,7 @@ main {
 }
 .intro h1 {
   max-width: 20em;
+  line-height: 1.5em;
 }
 .intro p {
   max-width: 30em;
@@ -144,6 +153,29 @@ main {
 }
 .grid .grid-item img {
   padding: 1.2em;
+}
+
+.banner {
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+.banner .banner-wrap {
+  padding: 5%;
+}
+.banner h2 {
+  max-width: 10em;
+  line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.banner p {
+  max-width: 35em;
+  margin-top: 0;
+}
+.banner a {
+  color: #65e2d9;
 }
 
 /*

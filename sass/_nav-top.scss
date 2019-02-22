@@ -7,7 +7,6 @@
         list-style: none;
         padding: 0 1.5em;
         a {
-            font-family: $font-headings;
             color: $color-grey;
             border-radius: 40px;
             background-color: transparent;
@@ -15,7 +14,6 @@
             &:hover {
                 @extend %button;
                 padding: 0.5em 1.5em;
-                font-weight: $bold;
             }
         }
     }

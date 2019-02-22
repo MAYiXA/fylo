@@ -10,13 +10,23 @@ h1, h2 {
     font-weight: 700;
 }
 
+.nav-top ul li a {
+    font-family: $font-headings;
+    &:hover {
+        font-weight: $bold;
+    }
+}
+
 .heading-big {
     font-size: pxtoem(40);
-    line-height: 1.5em;
 }
 
 .p-big, .grid .grid-item h2 {
     font-size: pxtoem(20);
+    line-height: 1.5em;
+}
+
+.p-medium {
     line-height: 1.5em;
 }
 
