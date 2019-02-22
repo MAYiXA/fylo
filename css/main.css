@@ -79,31 +79,6 @@ main {
   background-color: #181f2a;
 }
 
-.grid {
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  padding: 0 5%;
-}
-
-.grid-item {
-  text-align: center;
-  margin: 0 3.3em 3em;
-  align-self: center;
-}
-.grid-item h2 {
-  margin: 0;
-}
-.grid-item p {
-  margin: 0.5em;
-  max-width: 26.7em;
-}
-.grid-item img {
-  padding: 1.2em;
-}
-
 .nav-top {
   display: flex;
   justify-content: space-between;
@@ -145,6 +120,30 @@ main {
 .intro p {
   max-width: 30em;
   margin: 0 auto 1.5em;
+}
+
+.grid {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0 5%;
+}
+.grid .grid-item {
+  text-align: center;
+  margin: 0 3.3em 3em;
+  align-self: center;
+}
+.grid .grid-item h2 {
+  margin: 0;
+}
+.grid .grid-item p {
+  margin: 0.5em;
+  max-width: 26.7em;
+}
+.grid .grid-item img {
+  padding: 1.2em;
 }
 
 /*

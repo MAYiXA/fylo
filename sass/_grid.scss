@@ -1,0 +1,24 @@
+
+.grid {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0 5%;
+    .grid-item {
+        text-align: center;
+        margin: 0 3.3em 3em;
+        align-self: center;
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: .5em;
+            max-width: 26.7em;
+        }
+        img {
+            padding: 1.2em;
+        }
+    }
+}
