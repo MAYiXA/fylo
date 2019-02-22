@@ -4,7 +4,6 @@ body {
 
 a {
     text-decoration: none;
-  
 	&:hover,
 	&:focus,
 	&:active {
@@ -21,16 +20,22 @@ a {
 
 .grid {
     margin: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
 }
 
 .grid-item {
-    width: 29.5%;
     text-align: center;
-    padding: 3em;
+    margin: 0 6em;
+    align-self: center;
+    p {
+        max-width: 20em;
+    }
+    img {
+        padding: .5em;
+    }
 }
 
