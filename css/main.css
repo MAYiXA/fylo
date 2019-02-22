@@ -15,7 +15,7 @@ h1, h2 {
   line-height: 1.5em;
 }
 
-.p-big {
+.p-big, .grid .grid-item h2 {
   font-size: 1.25em;
   line-height: 1.5em;
 }
@@ -86,20 +86,25 @@ a:hover, a:focus, a:active {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
+  margin: 4em 0;
 }
 
 .grid-item {
   text-align: center;
-  margin: 0 6em;
+  margin: 2.5em 3.2em;
   align-self: center;
 }
+.grid-item h2 {
+  margin: 0;
+}
 .grid-item p {
-  max-width: 20em;
+  margin: 0.5em;
+  max-width: 26.7em;
 }
 .grid-item img {
-  padding: 0.5em;
+  padding: 1.2em;
 }
 
 .nav-top {
