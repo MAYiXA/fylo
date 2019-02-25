@@ -17,11 +17,16 @@ h1, h2 {
   font-weight: 700;
 }
 
+.banner .banner-wrap a {
+  font-family: "Open Sans", sans-serif;
+}
+
 .heading-big {
   font-size: 2.5em;
 }
 
-.p-big, .grid .grid-item h2 {
+.p-big,
+.grid .grid-item h2 {
   font-size: 1.25em;
   line-height: 1.5em;
 }
@@ -174,8 +179,27 @@ main {
   max-width: 35em;
   margin-top: 0;
 }
-.banner a {
+.banner .link {
+  display: inline-block;
   color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+  padding-bottom: 0.3em;
+  transition: all 0.2s ease-in;
+}
+.banner .link::after {
+  content: url("icon-arrow.svg");
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: 0.333em;
+  transform: translateY(0.25em);
+  transition: inherit;
+}
+.banner .link:hover, .banner .link:focus, .banner .link:active {
+  border-bottom-color: transparent;
+}
+.banner .link:hover::after, .banner .link:focus::after, .banner .link:active::after {
+  margin-left: 0.75em;
 }
 
 /*

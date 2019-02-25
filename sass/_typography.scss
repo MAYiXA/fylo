@@ -17,11 +17,16 @@ h1, h2 {
     }
 }
 
+.banner .banner-wrap a {
+    font-family: $font-body;
+}
+
 .heading-big {
     font-size: pxtoem(40);
 }
 
-.p-big, .grid .grid-item h2 {
+.p-big,
+.grid .grid-item h2 {
     font-size: pxtoem(20);
     line-height: 1.5em;
 }

@@ -16,7 +16,28 @@
         max-width: 35em;
         margin-top: 0;
     }
-    a {
+    .link {
+        display: inline-block;
         color: $color-grad-cyan;
+        border-bottom: 1px solid $color-grad-cyan;
+        padding-bottom: .3em;
+        transition: all .2s ease-in;
+        &::after {
+            content: url("icon-arrow.svg");
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            margin-left: .333em;
+            transform: translateY(.25em);
+            transition: inherit;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            border-bottom-color: transparent;
+            &::after {
+                margin-left: .75em;
+            }
+        }
     }
 }
