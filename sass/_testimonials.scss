@@ -1,0 +1,17 @@
+.testimonials {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .img-quote {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    blockquote {
+        background-color: $color-bg-testi;
+        padding: 1em;
+        p {
+            max-width: 25em;
+        }
+    }
+}

@@ -202,6 +202,24 @@ main {
   margin-left: 0.75em;
 }
 
+.testimonials {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.testimonials .img-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonials blockquote {
+  background-color: #202a3c;
+  padding: 1em;
+}
+.testimonials blockquote p {
+  max-width: 25em;
+}
+
 /*
 .attribution {
     font-size: 11px;
