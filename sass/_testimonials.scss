@@ -11,7 +11,9 @@
         background-color: $color-bg-testi;
         padding: 1em;
         p {
-            max-width: 25em;
+            max-width: 21em;
+            font-size: pxtoem(14);
+            line-height: 1.5em;
         }
     }
 }

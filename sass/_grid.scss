@@ -12,10 +12,14 @@
         align-self: center;
         h2 {
             margin: 0;
+            font-size: pxtoem(20);
+            line-height: 1.5em;
         }
         p {
             margin: .5em;
             max-width: 26.7em;
+            font-size: pxtoem(14);
+            line-height: 1.5em;
         }
         img {
             padding: 1.2em;

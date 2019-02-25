@@ -18,5 +18,7 @@
     p {
         max-width: 30em;
         margin: 0 auto 1.5em;
+        font-size: pxtoem(20);
+        line-height: 1.5em;
     }
 }
