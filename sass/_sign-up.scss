@@ -1,5 +1,5 @@
 .sign-up {
-    padding: 5%;
+    padding: 7% 5% 7%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -9,12 +9,17 @@
         box-shadow: 10px 10px 23px -5px $color-shadow;
         padding: 1em 4em 1em;
         text-align: center;
-        h2 {
-            font-size: pxtoem(32);
-        }
-        p {
-            line-height: 1.5em;
-            font-size: pxtoem(14);
+        .sign-up-wrap {
+            max-width: 40em;
+            margin: 0 auto;
+            h2 {
+                font-size: pxtoem(32);
+                margin-bottom: .7em;
+            }
+            p {
+                line-height: 1.5em;
+                font-size: pxtoem(14);
+            }
         }
         form {
             display: flex;
@@ -22,7 +27,7 @@
             justify-content: center;
             padding: 1.5em;
             .email-field {
-                width: 33em;
+                width: 34em;
                 padding: 1em 3em 1em;
                 margin-right: 2.5em;
                 border-radius: 40px;
