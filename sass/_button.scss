@@ -26,8 +26,9 @@
     padding: 18px 20% 18px 20%;
     font-weight: $bold;
     transition: all .2s ease-in-out;
+    font-size: pxtoem(14);
     @media #{$breakpoint} {
-    padding: 15px 35px 15px 35px;
+    padding: 15px 30px 15px 30px;
     }
         &:hover { 
             transform: scale(0.9);

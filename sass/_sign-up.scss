@@ -1,0 +1,42 @@
+.sign-up {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    .sign-up-box {
+        background-color: $color-bg-intro;
+        border-radius: 10px;
+        box-shadow: 10px 10px 23px -5px $color-shadow;
+        padding: 1em 4em 1em;
+        text-align: center;
+        h2 {
+            font-size: pxtoem(32);
+        }
+        p {
+            line-height: 1.5em;
+            font-size: pxtoem(14);
+        }
+        form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 1.5em;
+            .email-field {
+                width: 33em;
+                padding: 1em 3em 1em;
+                margin-right: 2.5em;
+                border-radius: 40px;
+                border: none;
+                font-size: pxtoem(12);
+                font-family: $font-body;
+                &:focus {
+                    outline: 0;
+                }
+                &::placeholder {
+                    color: $color-grey;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

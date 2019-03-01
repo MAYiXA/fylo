@@ -47,10 +47,11 @@ h1, h2 {
   padding: 18px 20% 18px 20%;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
+  font-size: 0.875em;
 }
 @media only screen and (min-width : 426px) {
   .btn-form {
-    padding: 15px 35px 15px 35px;
+    padding: 15px 30px 15px 30px;
   }
 }
 .btn-form:hover {
@@ -241,6 +242,49 @@ main {
 .testimonials blockquote footer .footer-wrap p {
   font-size: 0.5625em;
   margin-top: 0.2em;
+}
+
+.sign-up {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.sign-up .sign-up-box {
+  background-color: #1c2431;
+  border-radius: 10px;
+  box-shadow: 10px 10px 23px -5px rgba(0, 0, 0, 0.4);
+  padding: 1em 4em 1em;
+  text-align: center;
+}
+.sign-up .sign-up-box h2 {
+  font-size: 2em;
+}
+.sign-up .sign-up-box p {
+  line-height: 1.5em;
+  font-size: 0.875em;
+}
+.sign-up .sign-up-box form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1.5em;
+}
+.sign-up .sign-up-box form .email-field {
+  width: 33em;
+  padding: 1em 3em 1em;
+  margin-right: 2.5em;
+  border-radius: 40px;
+  border: none;
+  font-size: 0.75em;
+  font-family: "Open Sans", sans-serif;
+}
+.sign-up .sign-up-box form .email-field:focus {
+  outline: 0;
+}
+.sign-up .sign-up-box form .email-field::placeholder {
+  color: #d9d9d9;
+  opacity: 1;
 }
 
 /*
