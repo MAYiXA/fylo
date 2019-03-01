@@ -4,24 +4,47 @@
     flex-flow: row wrap;
     position: relative;
     margin-top: 5em;
+    margin-bottom: 5em;
     blockquote {
         background-color: $color-bg-testi;
-        padding: 2em 2em .5em;
-        margin: 1.3em;
+        padding: 2em 1.8em 1em;
+        margin: 1.2em;
         &:first-child::before {
             content: url(bg-quotes.png);
+            transform: scale(0.7,0.7);
             position: absolute;
-            top: -3.2em;
+            top: -2.8em;
             filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(140deg) saturate(1000%) contrast(0.9);
         }
         p {
-            max-width: 21em;
+            max-width: 23em;
             font-size: pxtoem(14);
             line-height: 1.5em;
+            letter-spacing: .05em;
         }
-        img {
-            max-width: 1.5em;
-            border-radius: 50%;
+        footer {
+            display: flex;
+            justify-content: left;
+            flex-flow: row wrap;
+            img {
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                align-self: center;
+            }
+            .footer-wrap {
+                margin-left: .5em;
+                h2 {
+                    font-size: pxtoem(10);
+                    letter-spacing: .1em;
+                    padding-top: 0.1em;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: pxtoem(9);
+                    margin-top: .2em;
+                }  
+            }
         }
     }
 }

@@ -200,26 +200,49 @@ main {
   flex-flow: row wrap;
   position: relative;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 .testimonials blockquote {
   background-color: #202a3c;
-  padding: 2em 2em 0.5em;
-  margin: 1.3em;
+  padding: 2em 1.8em 1em;
+  margin: 1.2em;
 }
 .testimonials blockquote:first-child::before {
   content: url(bg-quotes.png);
+  transform: scale(0.7, 0.7);
   position: absolute;
-  top: -3.2em;
+  top: -2.8em;
   filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(140deg) saturate(1000%) contrast(0.9);
 }
 .testimonials blockquote p {
-  max-width: 21em;
+  max-width: 23em;
   font-size: 0.875em;
   line-height: 1.5em;
+  letter-spacing: 0.05em;
 }
-.testimonials blockquote img {
-  max-width: 1.5em;
+.testimonials blockquote footer {
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+}
+.testimonials blockquote footer img {
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
+  align-self: center;
+}
+.testimonials blockquote footer .footer-wrap {
+  margin-left: 0.5em;
+}
+.testimonials blockquote footer .footer-wrap h2 {
+  font-size: 0.625em;
+  letter-spacing: 0.1em;
+  padding-top: 0.1em;
+  margin-bottom: 0;
+}
+.testimonials blockquote footer .footer-wrap p {
+  font-size: 0.5625em;
+  margin-top: 0.2em;
 }
 
 /*
