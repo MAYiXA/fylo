@@ -367,16 +367,16 @@ main {
   background-image: linear-gradient(135deg, #339ecc, #65e2d9);
 }
 
-/*
-.attribution {
-    font-size: 11px;
-    text-align: center;
+.website-author {
+  font-size: 0.6875em;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
 }
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.website-author a {
+  color: #339ecc;
 }
-
-*/
+.website-author a:hover {
+  color: #65e2d9;
+}
 
 /*# sourceMappingURL=main.css.map */

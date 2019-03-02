@@ -1,0 +1,11 @@
+.website-author {
+    font-size: pxtoem(11);
+    text-align: center;
+    transition: all .2s ease-in-out;
+    a {
+    color: $color-grad-blue;
+        &:hover {
+            color: $color-grad-cyan;
+        }
+    }
+}
