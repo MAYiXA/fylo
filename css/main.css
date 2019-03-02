@@ -10,6 +10,11 @@ h1, h2 {
   font-weight: 700;
 }
 
+a {
+  color: #d9d9d9;
+  font-family: "Open Sans", sans-serif;
+}
+
 .nav-top ul li a {
   font-family: "Raleway", sans-serif;
 }
@@ -19,6 +24,11 @@ h1, h2 {
 
 .banner .banner-wrap a {
   font-family: "Open Sans", sans-serif;
+}
+
+.nav-bottom .nav-flex .nav-column ul li a {
+  font-family: "Open Sans", sans-serif;
+  color: #d9d9d9;
 }
 
 .nav-top ul li a:hover, .btn-form, .btn {
@@ -246,7 +256,7 @@ main {
 }
 
 .sign-up {
-  padding: 7% 5% 0;
+  padding: 0 5% 0;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -255,8 +265,11 @@ main {
   background-color: #1c2431;
   border-radius: 10px;
   box-shadow: 10px 10px 23px -5px rgba(0, 0, 0, 0.4);
-  padding: 1em 4em 1em;
+  padding: 1em 3em 1em;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  top: 100px;
 }
 .sign-up .sign-up-box .sign-up-wrap {
   max-width: 40em;
@@ -295,8 +308,63 @@ main {
 
 .nav-bottom {
   background-color: #0b1523;
-  padding: 12% 5% 5%;
-  margin-top: -7em;
+  padding: 11em 7% 5%;
+}
+.nav-bottom .nav-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.nav-bottom .nav-flex .nav-column {
+  padding: 1em;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+.nav-bottom .nav-flex .nav-column .location {
+  max-width: 22em;
+  line-height: 1.5em;
+}
+.nav-bottom .nav-flex .nav-column .location::before {
+  content: url(icon-location.svg);
+}
+.nav-bottom .nav-flex .nav-column .phone::before {
+  content: url(icon-phone.svg);
+  padding-right: 1.5em;
+}
+.nav-bottom .nav-flex .nav-column .email::before {
+  content: url(icon-email.svg);
+  padding-right: 1.5em;
+}
+.nav-bottom .nav-flex .nav-column .nav-links li {
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+.nav-bottom .nav-flex .nav-column .nav-links li a {
+  transition: all 0.2s ease-in-out;
+}
+.nav-bottom .nav-flex .nav-column .nav-links li a:hover, .nav-bottom .nav-flex .nav-column .nav-links li a:focus {
+  outline: 0;
+  color: #65e2d9;
+}
+.nav-bottom .nav-flex .nav-column .social-media li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 0.3em 0;
+}
+.nav-bottom .nav-flex .nav-column .social-media li i {
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  transition: all 0.2s ease-in-out;
+}
+.nav-bottom .nav-flex .nav-column .social-media li i:hover, .nav-bottom .nav-flex .nav-column .social-media li i:focus {
+  outline: 0;
+  color: white;
+  transform: scale(1.2);
+  background-image: linear-gradient(135deg, #339ecc, #65e2d9);
 }
 
 /*
