@@ -20,7 +20,7 @@
             max-width: 40em;
             margin: 0 auto;
             h2 {
-                font-size: pxtoem(21);
+                font-size: pxtoem(20);
                 margin-bottom: .7em;
                 @media #{$breakpoint} {
                     font-size: pxtoem(32);
