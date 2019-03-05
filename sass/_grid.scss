@@ -5,11 +5,17 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    padding: 0 5%;
+    padding: 7em 5% 4em;
+    @media #{$breakpoint} {
+        padding: 0 5%;
+    }
     .grid-item {
         text-align: center;
-        margin: 0 3.3em 3em;
         align-self: center;
+        margin: 5%;
+        @media #{$breakpoint} {
+            margin: 0 3.3em 3em;
+        }
         h2 {
             margin: 0;
             font-size: pxtoem(20);
@@ -18,8 +24,11 @@
         p {
             margin: .5em;
             max-width: 26.7em;
-            font-size: pxtoem(14);
+            font-size: pxtoem(15);
             line-height: 1.5em;
+            @media #{$breakpoint} {
+                font-size: pxtoem(14);
+            }
         }
         img {
             padding: 1.2em;

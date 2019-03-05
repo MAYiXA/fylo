@@ -1,19 +1,40 @@
 .nav-top {
+    width: 90%;
+    padding: 5%;
     display: flex;
     justify-content: space-between;
-    padding: 5%;
-    ul li {
-        display: inline-block;
-        list-style: none;
-        padding: 0 1.5em;
-        a {
-            color: $color-grey;
-            border-radius: 40px;
-            background-color: transparent;
-            transition: all .4s ease-in-out;
-            &:hover {
-                @extend %button;
-                padding: 0.5em 1.5em;
+    img {
+        width: 30%;
+        height: 30%;
+        @media #{$breakpoint} {
+            width: pxtoem(176);
+            height: pxtoem(52);
+        }
+    }
+    ul {
+        padding: 0;
+        margin: .5em 0 0;
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 0 .5em;
+            @media #{$breakpoint} {
+                padding: 0 1.5em;
+            }
+            a {
+                color: $color-grey;
+                transition: all .2s ease-in-out;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $color-grad-cyan;
+                    @media #{$breakpoint} {
+                        color: $color-white;
+                        padding: .5em 1em;
+                        background-image: linear-gradient(135deg, $color-grad-blue, $color-grad-cyan);
+                        border-radius: 40px;
+                    }
+                }
             }
         }
     }

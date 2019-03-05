@@ -1,44 +1,64 @@
 .banner {
-    padding: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto 8em;
+    @media #{$breakpoint} {
+        margin: 0 auto 5em;
+    }
     .banner-wrap {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
         padding: 5%;
-    }
-    h2 {
-        max-width: 10em;
-        line-height: 1.3em;
-        margin-top: 1em;
-        margin-bottom: .5em;
-        font-size: pxtoem(40);
-    }
-    p {
-        max-width: 35em;
-        margin-top: 0;
-        line-height: 1.5em;
-    }
-    .link {
-        display: inline-block;
-        color: $color-grad-cyan;
-        border-bottom: 1px solid $color-grad-cyan;
-        padding-bottom: .3em;
-        transition: all .2s ease-in;
-        &::after {
-            content: url("icon-arrow.svg");
-            display: inline-block;
-            height: 1em;
-            width: 1em;
-            margin-left: .333em;
-            transform: translateY(.25em);
-            transition: inherit;
+        img {
+            width: 90%;
+            max-width: 615px;
+            height: 50%;
         }
-        &:hover,
-        &:focus,
-        &:active {
-            border-bottom-color: transparent;
-            &::after {
-                margin-left: .75em;
+        .banner-text-wrap {
+            margin: auto 0 auto 4%;
+            max-width: 35em;
+            @media #{$breakpoint} {
+                margin: auto 0 auto 5%;
+            }
+            h2 {
+                line-height: 1.3em;
+                margin-top: 2em;
+                margin-bottom: 1em;
+                font-size: pxtoem(21);
+                @media #{$breakpoint} {
+                    font-size: pxtoem(40);
+                    max-width: 10em;
+                    margin-top: 1em;
+                    margin-bottom: .5em;
+                }
+            }
+            p {
+                margin-top: 0;
+                line-height: 1.5em;
+            }
+            .link {
+                display: inline-block;
+                color: $color-grad-cyan;
+                border-bottom: 1px solid $color-grad-cyan;
+                padding-bottom: .3em;
+                transition: all .2s ease-in;
+                &::after {
+                    content: url("icon-arrow.svg");
+                    display: inline-block;
+                    height: 1em;
+                    width: 1em;
+                    margin-left: .333em;
+                    transform: translateY(.25em);
+                    transition: inherit;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    border-bottom-color: transparent;
+                    &::after {
+                        margin-left: .75em;
+                    }
+                }
             }
         }
     }

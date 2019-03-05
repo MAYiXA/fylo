@@ -2,25 +2,38 @@
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    position: relative;
     margin-top: 5em;
     margin-bottom: 5em;
     blockquote {
         background-color: $color-bg-testi;
-        padding: 2em 1.8em 1em;
-        margin: 1.2em;
+        padding: 1.5em 1.8em 1em;
+        margin: 1.2em 10%;
+        border-radius: 5px;
+        position: relative;
+        @media #{$breakpoint} {
+            margin: 1.2em; 
+        }
         &:first-child::before {
             content: url(bg-quotes.png);
-            transform: scale(0.7,0.7);
+            transform: scale(0.4);
             position: absolute;
-            top: -2.8em;
-            filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(140deg) saturate(1000%) contrast(0.9);
+            top: -3.5em;
+            left: -1.2em;
+            filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(140deg) saturate(900%) contrast(1.5);
+            @media #{$breakpoint} {
+                transform: scale(0.7);
+                top: -4em;
+                left: -1.3em;
+            }
         }
         p {
             max-width: 23em;
-            font-size: pxtoem(14);
+            font-size: pxtoem(12);
             line-height: 1.5em;
             letter-spacing: .05em;
+            @media #{$breakpoint} {
+                font-size: pxtoem(14);
+            }
         }
         footer {
             display: flex;

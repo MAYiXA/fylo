@@ -8,7 +8,7 @@
 
 .btn {
     @extend %button;
-    padding: 18px 100px 18px 100px;
+    padding: 1.125em 6.250em;
     font-weight: $bold;
     margin: 0 auto;
     transition: all .2s ease-in-out;
@@ -23,12 +23,13 @@
     @extend %button;
     border: none;
     outline: 0;
-    padding: 18px 20% 18px 20%;
+    padding: 1.2em 5.3em;
     font-weight: $bold;
     transition: all .2s ease-in-out;
     font-size: pxtoem(14);
     @media #{$breakpoint} {
-    padding: 15px 30px 15px 30px;
+        padding: 1.2em 1.875em;
+        margin: 0 1em 1em 0;
     }
         &:hover { 
             transform: scale(0.9);

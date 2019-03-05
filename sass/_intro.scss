@@ -1,6 +1,5 @@
 .intro {
-    margin: auto;
-    padding-bottom: 9em;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -11,15 +10,34 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
+    @media #{$breakpoint} {
+        padding-bottom: 9em;
+    }
+    img {
+        width: 90%;
+        max-width: 720px;
+        height: auto;
+        align-self: center;
+        padding: 1em;
+    }
     h1 {
         max-width: 20em;
         line-height: 1.5em;
-        font-size: pxtoem(40);
+        font-size: pxtoem(28);
+        padding: 0 1em;
+        align-self: center;
+        @media #{$breakpoint} {
+            font-size: pxtoem(40);
+        }
     }
     p {
         max-width: 30em;
         margin: 0 auto 1.5em;
-        font-size: pxtoem(20);
+        font-size: pxtoem(17.5);
         line-height: 1.5em;
+        padding: 0 1.5em;
+        @media #{$breakpoint} {
+            font-size: pxtoem(20);
+        }
     }
 }
