@@ -1,11 +1,21 @@
 .website-author {
-    font-size: pxtoem(11);
+    font-size: pxtoem(14);
     text-align: center;
     transition: all .2s ease-in-out;
+    width: 100%;
+    margin-top: 3em;
+    padding: 1em 0;
+    background-color: $color-bg-intro;
+    border-radius: 10px 10px 0 0;
     a {
     color: $color-grad-blue;
         &:hover {
             color: $color-grad-cyan;
         }
+    }
+    p {
+        margin: 0;
+        padding: .3em 0;
+        display: inline-block;
     }
 }

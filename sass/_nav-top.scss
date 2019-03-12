@@ -17,22 +17,39 @@
         li {
             display: inline-block;
             list-style: none;
-            padding: 0 .5em;
-            @media #{$breakpoint} {
-                padding: 0 1.5em;
-            }
             a {
                 color: $color-grey;
-                transition: all .2s ease-in-out;
+                transition: linear 0s;
+                padding: 0 .5em;
+                position: relative;
+                @media #{$breakpoint} {
+                    padding: .5em 1.5em;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-image: linear-gradient(135deg, $color-grad-blue, $color-grad-cyan);
+                    border-radius: 40px;
+                    z-index: -1;
+                    transform: scale(0.3, 1);
+                    opacity: 0;
+                }
                 &:hover,
                 &:focus,
                 &:active {
                     color: $color-grad-cyan;
                     @media #{$breakpoint} {
                         color: $color-white;
-                        padding: .5em 1em;
-                        background-image: linear-gradient(135deg, $color-grad-blue, $color-grad-cyan);
-                        border-radius: 40px;
+                    }
+                
+                    &:before {
+                        transform: scale(1, 1);
+                        opacity: 1;
+                        transition: all 0.3s linear 0s;
                     }
                 }
             }

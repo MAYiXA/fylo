@@ -51,28 +51,28 @@ a {
   transition: all 0.2s ease-in-out;
 }
 .btn:hover {
-  transform: scale(0.9);
-  filter: brightness(80%);
+  filter: brightness(75%);
   background-image: linear-gradient(135deg, #339ecc, #65e2d9);
 }
 
 .btn-form {
   border: none;
   outline: 0;
-  padding: 1.2em 5.3em;
+  padding: 1.3em 3em 1.3em;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
   font-size: 0.875em;
+  width: 100%;
 }
 @media only screen and (min-width : 426px) {
   .btn-form {
     padding: 1.2em 1.875em;
     margin: 0 1em 1em 0;
+    width: auto;
   }
 }
 .btn-form:hover {
-  transform: scale(0.9);
-  filter: brightness(80%);
+  filter: brightness(75%);
   background-image: linear-gradient(135deg, #339ecc, #65e2d9);
 }
 
@@ -116,16 +116,30 @@ main {
 .nav-top ul li {
   display: inline-block;
   list-style: none;
-  padding: 0 0.5em;
-}
-@media only screen and (min-width : 426px) {
-  .nav-top ul li {
-    padding: 0 1.5em;
-  }
 }
 .nav-top ul li a {
   color: #d9d9d9;
-  transition: all 0.2s ease-in-out;
+  transition: linear 0s;
+  padding: 0 0.5em;
+  position: relative;
+}
+@media only screen and (min-width : 426px) {
+  .nav-top ul li a {
+    padding: 0.5em 1.5em;
+  }
+}
+.nav-top ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(135deg, #339ecc, #65e2d9);
+  border-radius: 40px;
+  z-index: -1;
+  transform: scale(0.3, 1);
+  opacity: 0;
 }
 .nav-top ul li a:hover, .nav-top ul li a:focus, .nav-top ul li a:active {
   color: #65e2d9;
@@ -133,13 +147,16 @@ main {
 @media only screen and (min-width : 426px) {
   .nav-top ul li a:hover, .nav-top ul li a:focus, .nav-top ul li a:active {
     color: white;
-    padding: 0.5em 1em;
-    background-image: linear-gradient(135deg, #339ecc, #65e2d9);
-    border-radius: 40px;
   }
+}
+.nav-top ul li a:hover:before, .nav-top ul li a:focus:before, .nav-top ul li a:active:before {
+  transform: scale(1, 1);
+  opacity: 1;
+  transition: all 0.3s linear 0s;
 }
 
 .intro {
+  background-color: #1c2431;
   width: 100%;
   display: flex;
   flex-flow: column wrap;
@@ -446,12 +463,12 @@ main {
 
 .nav-bottom {
   background-color: #0b1523;
-  padding: 18em 7% 5%;
+  padding: 18em 7% 0;
   margin-top: -7em;
 }
 @media only screen and (min-width : 426px) {
   .nav-bottom {
-    padding: 15em 7% 5%;
+    padding: 15em 7% 0;
     margin: 0;
   }
 }
@@ -566,15 +583,25 @@ main {
 }
 
 .website-author {
-  font-size: 0.6875em;
+  font-size: 0.875em;
   text-align: center;
   transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 3em;
+  padding: 1em 0;
+  background-color: #1c2431;
+  border-radius: 10px 10px 0 0;
 }
 .website-author a {
   color: #339ecc;
 }
 .website-author a:hover {
   color: #65e2d9;
+}
+.website-author p {
+  margin: 0;
+  padding: 0.3em 0;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

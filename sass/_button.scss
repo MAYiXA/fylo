@@ -13,8 +13,7 @@
     margin: 0 auto;
     transition: all .2s ease-in-out;
         &:hover { 
-            transform: scale(0.9);
-            filter: brightness(80%);
+            filter: brightness(75%);
             background-image: linear-gradient(135deg, $color-grad-blue, $color-grad-cyan);
         }
 }
@@ -23,17 +22,18 @@
     @extend %button;
     border: none;
     outline: 0;
-    padding: 1.2em 5.3em;
+    padding: 1.3em 3em 1.3em;
     font-weight: $bold;
     transition: all .2s ease-in-out;
     font-size: pxtoem(14);
+    width: 100%;
     @media #{$breakpoint} {
         padding: 1.2em 1.875em;
         margin: 0 1em 1em 0;
+        width: auto;
     }
         &:hover { 
-            transform: scale(0.9);
-            filter: brightness(80%);
+            filter: brightness(75%);
             background-image: linear-gradient(135deg, $color-grad-blue, $color-grad-cyan);
         }
 }
